@@ -1,0 +1,128 @@
+.footer {
+  background: var(--ink);
+  padding: 48px 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.footer__avv {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--terra);
+  margin-bottom: 4px;
+}
+
+.footer__name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--parchment);
+}
+
+.footer__tagline {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--rule);
+  margin-top: 8px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__link {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rule);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer__link:hover { color: var(--parchment); }
+
+.footer__legal {
+  font-family: var(--font-serif);
+  font-size: 11px;
+  font-style: italic;
+  color: rgba(200, 191, 173, 0.5);
+  line-height: 1.7;
+  text-align: right;
+}
+
+.footer__bottom {
+  background: #111009;
+  padding: 16px 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copy {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(200, 191, 173, 0.4);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 40px 5vw;
+    text-align: center;
+  }
+  .footer__links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 20px;
+  }
+  .footer__legal {
+    text-align: center;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+.footer__logo {
+  width: 110px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+}
+
+.footer__contact-link {
+  color: rgba(200, 191, 173, 0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+  font-style: normal;
+}
+.footer__contact-link:hover {
+  color: var(--terra-light);
+}
+
+/* ── Footer link come button (Privacy / Note legali) ── */
+.footer__link--btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}

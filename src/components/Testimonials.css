@@ -1,0 +1,139 @@
+.testimonials-section {
+  background: var(--cream);
+  padding: 96px 5vw;
+}
+
+.testi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 64px;
+}
+
+.testi-card {
+  border: 0.5px solid var(--rule);
+  padding: 40px;
+  background: var(--cream);
+}
+
+.testi-quote {
+  font-family: var(--font-display);
+  font-size: 72px;
+  font-weight: 700;
+  color: var(--terra-faint);
+  line-height: 0.5;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.testi-text {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--ink);
+  margin-bottom: 2rem;
+}
+
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 0.5px solid var(--rule-light);
+  padding-top: 1.25rem;
+}
+
+.testi-initials {
+  width: 40px;
+  height: 40px;
+  background: var(--ink);
+  color: var(--parchment);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.testi-name {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.testi-role {
+  font-family: var(--font-serif);
+  font-size: 12px;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 64px 5vw;
+  }
+  .testi-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 40px;
+  }
+  .testi-card {
+    padding: 28px 24px;
+  }
+  .testi-text {
+    font-size: 16px;
+  }
+}
+
+/* ── Garanzie variant ── */
+.garanzia-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.garanzia-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.garanzia-num {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--rule);
+  line-height: 1;
+}
+
+.garanzia-icon {
+  font-size: 28px;
+  color: var(--terra);
+  margin-top: 8px;
+}
+
+.garanzia-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.testi-card .testi-text {
+  font-size: 15px;
+  font-style: normal;
+  color: var(--ink-soft);
+  line-height: 1.75;
+  margin-bottom: 0;
+}

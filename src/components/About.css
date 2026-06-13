@@ -1,0 +1,132 @@
+.about-section {
+  background: var(--ink);
+  padding: 96px 5vw;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6vw;
+  align-items: center;
+}
+
+.about-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--terra);
+  margin-bottom: 1.5rem;
+}
+
+.about-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.1;
+  color: var(--parchment);
+  margin-bottom: 2rem;
+}
+.about-h2 strong {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.about-body {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--rule);
+}
+
+.about-signature {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 0.5px solid rgba(200, 191, 173, 0.2);
+}
+
+.sig-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.about-photo-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  flex-shrink: 0;
+}
+
+.sig-name {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--parchment);
+}
+
+.sig-title {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--terra);
+  margin-top: 0.4rem;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.credential-card {
+  border-left: 2px solid var(--terra);
+  padding: 20px 24px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.cred-year {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--terra);
+  margin-bottom: 0.4rem;
+}
+
+.cred-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--parchment);
+  margin-bottom: 0.3rem;
+}
+
+.cred-desc {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  color: var(--rule);
+  line-height: 1.6;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 64px 5vw;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .about-h2 {
+    font-size: clamp(28px, 8vw, 42px);
+  }
+}
